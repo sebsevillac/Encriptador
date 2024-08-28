@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/archivo-encriptado.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" rel="">
+            <img src="assets/archivo-encriptado.png" alt="Logo Alura" class="logo">
+        </a>    
+    </header>
+
+    <main>
+        <section class="input">
+            <textarea class="input-text" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="input-aviso">
+                <img src="assets/image_processing20210621-16554-1i34gwe.png" alt="Imagen Aviso" class="img-aviso">
+                <p class="input-text-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="input-encrypt-decrypt">
+                <button type="submit" class="input-encrypt-button">Encriptar</button>
+                <button type="submit" class="input-decrypt-button">Desencriptar</button>
+            </div>
+        </section>
+        <section class="output">
+           <div class="output-contenedor">
+                <img src="assets/1178479.png" alt="Imagen Lupa" class="img-lupa">
+                <p class="text1">Ningún mensaje fue encontrado</p>
+                <p class="text2">Ingrese el texto que deseas encriptar o desencriptar</p>
+           </div>
+           <textarea type="mensaje" class="evaluar" readonly></textarea>
+           <button type="submit" class="output-copy-button">Copiar</button>
+         </section>  
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Sebastián Sevilla</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');   
+
+:root{
+    --Font:#E5E5E5;
+    --White:#FFFFFF;
+    --Dark-Blue:#0A3871;
+    --Greey:#C5C5C5;
+    --Medium-Gray:#67808E;
+    --RGBA:rgba(0,0,0,0.08);
+    --White-Blue:#D8DFE8;
+    --Medium-Blue:#0a38718a;
+    --Gray:#343A40;
+    --Gree:#495057;
+
+    --primary-color: #000000;
+    --secondary-color: #F6F6F6;
+    --third-color: #22D4FD;
+    --fourth-color: #272727;
+
+    --monserrat-font: "Montserrat", sans-serif;
+    --Krona-font: "Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+::selection{
+    background: var(--Dark-Blue);
+    color: var(--White);
+}
+
+body{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 120px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--White);
+}
+
+.input{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.input-text{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--fourth-color);
+    border-radius: 15px;
+    resize: none;
+}
+
+.input-aviso::placeholder,:focus{
+    color: var(--Gree);
+}
+
+.input-aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.img-aviso{
+    display: flex;
+    align-items: flex-start;
+    width: 24px;
+    height: 24px;
+}
+
+.input-text-aviso{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--Medium-Gray);
+    gap: 120px;
+}
+
+.input-encrypt-decrypt{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.input-encrypt-button{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--White);
+    background: var(--Gray);
+    border: 1px solid var(--primary-color);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA); 
+}
+
+.input-encrypt-button:active{
+    box-shadow: inset 2px 2px 4px var(--Font),
+    inset -3px -4px 8px var(--Dark-Blue);
+    color: var(--White-Blue);
+}
+
+.input-decrypt-button{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-family: var(--monserrat-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary-color);
+    background: var(--Font);
+    border: 1px solid var(--primary-color);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA); 
+}
+
+.output-copy-button:active,
+.input-decrypt-button:active{
+    box-shadow: inset 2px 2px 4px var(--Dark-Blue),
+    inset -3px -4px 8px var(--Font);
+    color: var(--Medium-Blue);
+}
+
+.output{
+    width: 270px;
+    height: 580px;
+    background: var(--Font);
+    box-shadow: 10px 24px 32px -8px var(--Gray);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+    gap: 120px;
+}
+
+.output-contenedor{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--Font);
+}
+
+.img-lupa{
+    background: var(--Font);
+    width: 160px;
+    height: 160px;
+}
+
+.text1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--Gray);
+    background: var(--Font);
+}
+
+.text2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--Medium-Gray);
+    background: var(--Font);
+}
+
+.evaluar{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--Gree);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.evaluar:focus{
+    outline: none;
+}
+
+.output-copy-button{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--Greey);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA); 
+}
+
+.input-encrypt-button:hover,
+.input-decrypt-button:hover,
+.output-copy-button:hover{
+    transform: scale(0.97);
+}
+
+.footer{
+    background-color: var(--Gray);
+    padding: 24px;
+    color: var(--White);
+    text-align: center;
+    font-family: var(--monserrat-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .input{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .input-encrypt-decrypt{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .input-aviso{
+        position: inherit;
+        margin: 15px;
+    }   
+    
+    .output{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .output-contenedor{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .img-lupa{
+        display: none;
+    }
+
+    .output-copy-button{
+        position: inherit;
+        width: 100%;
+    }
+
+    .evaluar{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+
+@media(max-width: 720px){
+    
+    header .logo{
+        width: 100%;
+        background: var(--White);
+        padding: 2px;
+    }
+
+    .encriptar{
+        width:  90%;
+        font-size: 24px;
+    }
+
+    .input-encrypt-decrypt{
+        display: grid;
+        gap: 21px;
+    }
+
+    .output{
+        width: 90%;
+    }
+
+    .copyright{
+        font-size: 20px;
+    }
+}
